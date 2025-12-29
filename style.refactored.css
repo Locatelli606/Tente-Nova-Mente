@@ -859,3 +859,135 @@ body{
     width: 100%;
   }
 }
+
+/* =========================================================
+   AJUSTE GLOBAL DE FONTE PARA MOBILE (TESTE EXTREMO)
+   <! AQUI É A FONTE DO CELULAR >
+   ========================================================= */
+@media (max-width: 768px){
+
+  /* BASE GLOBAL */
+  html{
+    font-size: 10px; /* 🔥 METADE REAL, impossível não notar */
+  }
+
+  body{
+    font-size: 10px;
+  }
+
+  /* HERO */
+  .hero-welcome{
+    font-size: 14px;
+  }
+
+  .hero-text h1{
+    font-size: 24px;
+  }
+
+  .hero-text p{
+    font-size: 12px;
+  }
+
+  /* FEATURES */
+  .feature-card{
+    font-size: 13px;
+    padding: 18px;
+  }
+
+  /* MANIFESTO */
+  .manifesto h2{
+    font-size: 20px;
+  }
+
+  .manifesto p{
+    font-size: 13px;
+  }
+
+  /* ABOUT */
+  .about-title{
+    font-size: 22px;
+  }
+
+  .about-left p,
+  .about-right p{
+    font-size: 12px;
+  }
+
+  /* COMO FUNCIONA */
+  .how-title{
+    font-size: 24px;
+  }
+
+  .how-description{
+    font-size: 12px;
+  }
+
+  .how-step{
+    font-size: 12px;
+  }
+
+  /* FINAL */
+  .final-step h3{
+    font-size: 16px;
+  }
+
+  .final-step p{
+    font-size: 12px;
+  }
+
+  /* BOTÕES */
+  .cta-button,
+  .hero-button{
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 768px){
+  .features-header h2.features-title{
+    font-size: 18px;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 768px){
+
+  /* DIMINUI O ESPAÇO GERAL DO HERO NO MOBILE */
+  .hero-container{
+    gap: 30px; /* antes era 200px */
+  }
+
+  /* DIMINUI O ESPAÇO ABAIXO DO LOGO */
+  .hero-logo{
+    margin-bottom: 10px; /* antes 40px */
+  }
+
+}
+
+@media (max-width: 768px){
+
+  /* NORMALIZA ESPAÇAMENTO ENTRE SEÇÕES (MOBILE) */
+  section,
+  .features,
+  .manifesto,
+  .how-section,
+  .devices-section,
+  .final-section,
+  .developer-section,
+  .about-section{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* NORMALIZA ESPAÇO INTERNO DE BLOCOS */
+  .final-left,
+  .manifesto-content,
+  .features-header,
+  .how-container,
+  .devices-content{
+    gap: 24px;
+  }
+
+}
